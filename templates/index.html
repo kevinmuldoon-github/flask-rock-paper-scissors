@@ -1,0 +1,27 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+        <h2>PLAYER 1</h2>
+        <form action="/result" method="post">
+
+            <input type="radio" id="rock" name="player1-selection" value="Rock" checked>
+            <label for="rock">ROCK</label>
+            <input type="radio" id="scissors" name="player1-selection" value="Scissors">
+            <label for="scissors">SCISSORS</label>
+            <input type="radio" id="paper" name="player1-selection" value="Paper">
+            <label for="paper">PAPER</label><br /><br />
+
+            <h2>PLAYER 2</h2>
+            <input type="radio" id="rock" name="player2-selection" value="Rock" checked>
+            <label for="rock">ROCK</label>
+            <input type="radio" id="scissors" name="player2-selection" value="Scissors">
+            <label for="scissors">SCISSORS</label>
+            <input type="radio" id="paper" name="player2-selection" value="Paper">
+            <label for="paper">PAPER</label><br /><br />
+            <input type="submit" value="CHOOSE YOUR WEAPON!" />
+        </form>
+
+
+{% endblock %}

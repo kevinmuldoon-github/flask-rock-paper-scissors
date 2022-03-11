@@ -1,0 +1,91 @@
+
+body {
+    background-image: url('../static/images/polygons.png');
+    background-color: coral;
+}
+.grid-container {
+    margin:auto;
+    padding:50px;
+    width:50%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.grid-item {
+
+
+}
+
+h1 {
+    font: 70px 'Permanent Marker';
+    color:white;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin:20px;
+}
+
+form {
+
+    align-items: center;
+}
+
+form input {
+    flex-basis: calc(100%/3);
+    margin-bottom: 2%;
+}
+
+form input[type=radio] + label {
+    background-color: blue;
+    color:white;
+    font: 25px 'Blinker';
+    padding:15px;
+    margin:10px;
+}
+
+form input[type=radio]:checked + label {
+background-color: purple;
+border:5px solid black;
+}
+
+form input[type=submit] {
+    background-color: red;
+    color:white;
+    font: 25px 'Permanent Marker';
+    padding:15px;
+    margin:10px;
+}
+
+.results-table{
+    width:100%;
+    text-align:center;
+    padding:15px;
+    background-color: #fffafa;
+    border:1px solid black;
+}
+
+.results-table th{
+font-size:30px;
+background-color: red;
+color:white;
+}
+
+.results-table td{
+    font-size:30px; 
+}
+
+.play-again{
+    width:40%;
+    margin:auto;
+    text-align: center;
+    background-color: green;
+    margin:15px;
+    padding:15px;
+}
+
+.play-again a{
+    color:white;
+    font-size: 30px;
+}

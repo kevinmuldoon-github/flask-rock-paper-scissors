@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<table class="results-table">
+    <tr>
+        <th>{{player1.name}}</th>
+        <th>{{player2.name}}</th>
+        <th>Winner</th>
+    </tr>
+    <tr>
+        <td>{{player1.choice}}</td>
+        <td>{{player2.choice}}</td>
+        <td>The winner is </td>
+    </tr>
+</table>
+
+<div class="play-again"><a href="/">PLAY AGAIN</a></div>
+<img src="/static/images/therock.jpeg" width="300" height="300" alt="The Rock" />
+<img src="/static/images/scissors.jpeg" width="300" height="300" alt="Scissors" />
+<img src="/static/images/paper.jpeg" width="300" height="300" alt="Paper" />
+
+{% endblock %}
