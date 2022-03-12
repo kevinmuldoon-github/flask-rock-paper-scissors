@@ -11,9 +11,11 @@ def index():
 @app.route('/result', methods=['post'])
 def player_form():
     player1_selection = request.form['player1-selection']
+    player1_name = request.form['player1-name']
     player2_selection = request.form['player2-selection']
-    player1 = Player("Player 1", player1_selection)
-    player2 = Player("Player 2", player2_selection)
+    player2_name = request.form['player2-name']
+    player1 = Player(player1_name, player1_selection)
+    player2 = Player(player2_name, player2_selection)
     player_choices = Game(player1_selection, player2_selection)
 
     if player_choices.player1_choice == player_choices.player2_choice:
