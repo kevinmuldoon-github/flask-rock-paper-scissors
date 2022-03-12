@@ -24,6 +24,34 @@ h2 {
     margin:20px;
 }
 
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    overflow: hidden;
+    width:40%;
+}
+
+.nav-menu li{
+    float: left;
+    background-color: black;
+}
+
+.nav-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right:20px;
+    text-decoration: none;
+    font-size:20px;
+}
+
+.nav-menu li a:hover{
+    background-color: #111;
+    color:yellow;
+}
+
 form {
 
     align-items: center;
@@ -73,8 +101,7 @@ color:white;
 }
 
 .play-again{
-    width:40%;
-    margin:auto;
+    width:30%;
     text-align: center;
     background-color: green;
     margin:15px;
