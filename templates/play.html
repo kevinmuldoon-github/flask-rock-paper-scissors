@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="grid-item">
+
+    <h2>Play Rock Paper Scissors Against the Computer</h2>
+
+    <form action="/play-result" method="post">
+        <label for="player1-name">Name: </label>
+        <input type="text" name="player1-name" id="player1-name" required />
+        <label for="player1-selection">Choose Your Weapon: </label>
+        <select id="player1-selection" name="player1-selection">
+            <option value="Rock">Rock</option>
+            <option value="Scissors">Scissors</option>
+            <option value="Paper">Paper</option>
+        </select>
+
+        <input type="submit" value="LET BATTLE COMMENCE" />
+        </form>
+</div>
+
+
+{% endblock %}
