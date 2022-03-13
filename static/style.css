@@ -57,7 +57,7 @@ form {
 }
 
 form input {
-    margin-bottom: 15px;;
+    margin-bottom: 15px;
 }
 
 form input[type=radio] + label {
