@@ -3,10 +3,12 @@
 
 {% block content %}
 <div class="grid-item">
+    <p>Each player has to enter their name and select their weapon. Then let battle commence!</p>
+    <p>Check out <a href="/welcome">our rules page</a> for a more detailed overview of Rock Paper Scissors.</p>
         <h2>PLAYER 1</h2>
         <form action="/result" method="post">
             <label for="name">Name: </label>
-            <input type="text" name="player1-name" id="player1-name" required /><br /><br />
+            <input type="text" name="player1-name" id="player1-name" required />
             <input type="radio" id="rock" name="player1-selection" value="Rock" checked>
             <label for="rock">ROCK</label>
             <input type="radio" id="scissors" name="player1-selection" value="Scissors">
@@ -15,7 +17,7 @@
             <label for="paper">PAPER</label><br /><br />
             <h2>PLAYER 2</h2>
             <label for="name">Name: </label>
-            <input type="text" name="player2-name" id="player2-name" required /><br /><br />
+            <input type="text" name="player2-name" id="player2-name" required />
             <input type="radio" id="rock" name="player2-selection" value="Rock" checked>
             <label for="rock">ROCK</label>
             <input type="radio" id="scissors" name="player2-selection" value="Scissors">

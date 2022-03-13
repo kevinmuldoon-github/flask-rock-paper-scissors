@@ -5,9 +5,9 @@ body {
 }
 .grid-container {
     display:grid;
-    column-gap: 50px;
+
     margin:auto;
-    padding:50px;
+    padding:35px;
     width:50%;
     background-color: white;
     border-radius: 25px;
@@ -17,11 +17,11 @@ h1 {
     font: 70px 'Permanent Marker';
     color:white;
     text-align: center;
+    margin:10px;
 }
 
 h2 {
-    text-align: center;
-    margin:20px;
+
 }
 
 .nav-menu ul {
@@ -29,7 +29,6 @@ h2 {
     margin: 0 0 20px 0;
     padding: 0;
     overflow: hidden;
-    width:70%;
 }
 
 .nav-menu li{
@@ -48,8 +47,8 @@ h2 {
 }
 
 .nav-menu li a:hover{
-    background-color: #111;
-    color:yellow;
+    background-color: red;
+    color:white;
 }
 
 form {
@@ -82,12 +81,15 @@ form input[type=submit] {
     margin:10px;
 }
 
+form input[type=submit]:hover {
+    color:yellow;
+}
+
 .results-table{
     width:100%;
     text-align:center;
     padding:15px;
-    background-color: #fffafa;
-    border:1px solid black;
+    border:2px solid black;
 }
 
 .results-table th{
@@ -98,17 +100,23 @@ color:white;
 
 .results-table td{
     font-size:30px; 
+    padding:15px;
 }
 
 .play-again{
     width:65%;
     text-align: center;
     background-color: green;
-    margin:15px;
+    margin:auto;
+    margin-top:20px;
     padding:15px;
 }
 
 .play-again a{
     color:white;
     font-size: 30px;
+}
+
+.play-again a:hover{
+    color:yellow;
 }
